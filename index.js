@@ -1,5 +1,21 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+   // iterate over the array of nuubers
+  for( let i=0;i <array.length;i++){
+    // starting from i as our 1st number,identify a number that adds to our target
+    let number = target-array[i];
+    // iterate over the the remaining numbers
+    for (let j=i+1;j< array.length;j++) {
+      // check in te remaining numbers if they add up to our target
+      // if it does not the return false
+      if (array[j]){
+        return true;
+      }
+    }
+  }
+  return false;
+
+  // Write your algorithm here
 }
 
 /* 
